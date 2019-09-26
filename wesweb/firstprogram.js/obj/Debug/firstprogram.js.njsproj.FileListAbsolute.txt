@@ -1,0 +1,3 @@
+C:\Users\adamm\Documents\GitHub\wesweb\firstprogram.js\obj\Debug\firstprogram.js.njsprojAssemblyReference.cache
+C:\Users\adamm\Documents\GitHub\wesweb\firstprogram.js\obj\Debug\firstprogram.js.njsproj.CoreCompileInputs.cache
+C:\Users\adamm\Documents\GitHub\wesweb\firstprogram.js\bin\Microsoft.NodejsTools.WebRole.dll
