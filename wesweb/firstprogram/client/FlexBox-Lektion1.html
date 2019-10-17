@@ -1,0 +1,139 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FlexBox</title>
+
+    <style>
+       
+
+        #FlexBox {
+            display: flex;
+            flex-flow: wrap-reverse;
+            max-width: 800px;
+            background: gray;
+            margin: auto;
+        }
+
+        #FlexBox > div {
+            background-color: orange;
+            flex: auto;
+            width: 200px;
+            height: 150px;
+            margin: 2px;
+            text-align: center;
+            font-size: 3em;
+            position: relative;
+            
+        }
+
+        #FontFace {
+            font-family: cursive;
+            font-size: 44px;
+        }
+
+        #Transition {
+            margin: 20px;
+            width: 20px;
+            height: 20px;
+            background: red;
+            transition: 4s;
+        }
+
+        div:hover #Transition {
+            width: 100px;
+            height: 100px
+        }
+
+        .bild {
+            background: url(windows.jpg);
+            background-size: cover;
+
+
+        }
+
+        #z-index div {
+
+            border: #000 2px solid;
+            padding: 2px;
+            width: 50px;
+            height: 50px;
+        }
+
+        #div1 {
+            background-color: aquamarine;
+            top: 20px;
+            left: 20px;
+            z-index: 3;
+            position: absolute;
+        }
+
+        #div2 {
+            background-color: purple;
+            top: 40px;
+            left: 40px;
+            z-index: 7;
+            position: absolute;
+        }
+
+        #div3 {
+            background-color: red;
+            top: 60px;
+            left: 60px;
+            z-index: 6;
+            position: absolute;
+        }
+
+        #boxshaddow {
+            background-color: orange;
+        }
+
+        #shaddow {
+            background-color: white;
+            top: 20px;
+            left: 20px;
+            height: 80px;
+            width: 170px;
+            z-index: 7;
+            box-shadow: 15px 15px 30px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FlexBox</h1>
+
+    <div id="FlexBox">
+        <div>
+            <div id="Transition">
+            </div>
+        </div>
+        <div class="bild">
+
+        </div>
+        <div id="z-index">
+
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+
+        </div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div id="boxshaddow">
+            <div id="shaddow">
+            </div>
+        </div>
+        <div>8</div>
+        <div>9</div>
+        <div>
+            <div id="FontFace">
+                <p>HTML5 & CSS3</p>
+            </div>
+        </div>
+    </div>
+
+</body></html>
