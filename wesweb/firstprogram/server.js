@@ -9,9 +9,11 @@ const sendFile = (response, status, type, filePath) => {
 createServer((request, response) => {
 switch (request.url) {
     case "/":
-        return sendFile(response, 200, "text/html", "./client/FlexBox-Lektion1.html");
+        return sendFile(response, 200, "text/html", "./client/flexboxserver.html");
     case "/Gopnik.jpg":
         return sendFile(response, 200, "image/jpeg","./client/Gopnik.jpg");
+    case "/flexboxserver.css":
+        return sendFile(response, 200, "text/css", "./client/flexboxserver.css");
 
 }
 }).listen(3030);
