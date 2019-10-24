@@ -14,6 +14,8 @@ switch (request.url) {
         return sendFile(response, 200, "image/jpg","./client/Gopnik.jpg");
     case "/flexboxserver.css":
         return sendFile(response, 200, "text/css", "./client/flexboxserver.css");
+    case "/flexboxserver2.html":
+        return sendFile(response, 200, "text/html", "./client/flexboxserver2.html");
 
 }
 }).listen(3030);
