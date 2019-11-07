@@ -10,6 +10,7 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
+    "mongodb": "^3.3.3",
     "mysql": "^2.17.1",
     "nodemon": "^1.19.4",
     "save": "^2.4.0"
