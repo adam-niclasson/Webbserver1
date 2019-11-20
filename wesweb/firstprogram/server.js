@@ -1,6 +1,7 @@
 const { createServer } = require("http");
 const { createReadStream } = require("fs");
 const { decode } = require("querystring")
+const { updateDb } = require("./myModule")
 
 var myModule = require("./myModule")
 
