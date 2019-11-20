@@ -1,5 +1,10 @@
 const { createServer } = require("http");
 const { createReadStream } = require("fs");
+const { decode } = require("querystring")
+
+var myModule = require("./myModule")
+
+myModule.firstFunction(1,2)
 
 const sendFile = (response, status, type, filePath) => {
     response.writeHead(status, {"Content-Type": type });
