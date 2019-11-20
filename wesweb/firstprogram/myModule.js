@@ -20,7 +20,7 @@ exports.firstFunction = function (email, name, message)
                     db.close();
                 });
             } else {
-                var myobj = { name: `${name}`, email: `${email}`, messege: `${messege}` };
+                var myobj = { name: `${name}`, email: `${email}`, messege: `${message}` };
                 dbo.collection("WESWEB").insertOne(myobj, function (err, res) {
                     if (err) throw err;
                     console.log("1 document inserted");
