@@ -5,7 +5,7 @@ const { firstFunction } = require("./myModule")
 
 var myModule = require("./myModule")
 
-myModule.firstFunction(1,2)
+myModule.firstFunction(10,2)
 
 const sendFile = (response, status, type, filePath) => {
     response.writeHead(status, {"Content-Type": type });
