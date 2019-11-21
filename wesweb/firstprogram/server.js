@@ -3,16 +3,25 @@ const { createReadStream } = require("fs");
 const { decode } = require("querystring")
 const { firstFunction } = require("./myModule")
 
-var myModule = require("./myModule")
-
-myModule.firstFunction(1,2)
-
 const sendFile = (response, status, type, filePath) => {
     response.writeHead(status, {"Content-Type": type });
     createReadStream(filePath).pipe(response);
 };
 
 createServer((request, response) => {
+    if (request.method === "POST") {
+        let body = "";
+        request.on("data", data => {
+          body += data;
+        });
+        request.on("end", () => {
+          const { FirstName, LastName } = decode(body);
+          firstFunction(FirstName, LastName);
+          console.log(`email: ${FirstName}, name: ${LastName}`);
+        });
+      }
+
+
 switch (request.url) {
     case "/":
         return sendFile(response, 200, "text/html", "./client/flexboxserver.html");
