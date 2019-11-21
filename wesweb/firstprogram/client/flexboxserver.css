@@ -15,3 +15,11 @@
 p{
     background-color: green;
 }
+
+div.c {
+    position: absolute;
+    right: 150px;  
+    width: 200px;
+    height: 120px;
+    border: 3px solid grey;
+  }
