@@ -18,17 +18,22 @@ createServer((request, response) => {
           const { FirstName, LastName } = decode(body);
           firstFunction(FirstName, LastName);
           console.log(`email: ${FirstName}, name: ${LastName}`);
-        });
+        });        
+        return sendFile(response, 200, "text/html", "./client/flexboxserverlogin.html");
       }
 
 
 switch (request.url) {
     case "/":
         return sendFile(response, 200, "text/html", "./client/flexboxserver.html");
+    case "/flexboxserverlogin":
+        return sendFile(response, 200, "text/html", "./client/flexboxserverlogin.html");
     case "/Gopnik.jpg":
         return sendFile(response, 200, "image/jpg","./client/Gopnik.jpg");
     case "/flexboxserver.css":
         return sendFile(response, 200, "text/css", "./client/flexboxserver.css");
+    case "/Flexboxserverlogin.css":
+        return sendFile(response, 200, "text/css", "./client/Flexboxserverlogin.css");
     case "/flexboxserver2.html":
         return sendFile(response, 200, "text/html", "./client/flexboxserver2.html");
 
