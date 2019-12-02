@@ -1,0 +1,34 @@
+*{
+    margin-top: 0;
+    padding: 0;
+}
+
+#main{
+    width: 1000px;
+    background-color: darkgray;
+
+}
+
+#left{
+    width: 300px;
+    height: auto;
+    float: left;
+}
+
+#center{
+    width: 400px;
+    height: auto;
+    background-color: ghostwhite;
+    float: left;
+}
+
+#right{
+    width: 300px;
+    height: auto;
+    float: right;
+    text-align: left;
+}
+
+#right ul{
+    background-color: ghostwhite;
+}

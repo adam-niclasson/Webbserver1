@@ -8,7 +8,19 @@ const sendFile = (response, status, type, filePath) => {
     createReadStream(filePath).pipe(response);
 };
 
-
+createServer((request, response) => {
+  if (request.method === "POST") {
+      let body = "";
+      request.on("data", data => {
+        body += data;
+      });
+      request.on("end", () => {
+        const { Username, Password } = decode(body);
+        firstFunction(Username, Password);
+        console.log(`email: ${Username}, name: ${Password}`);
+      });        
+      return sendFile(response, 200, "text/html", "./client/indexogin.html");
+    };
 
 
 
@@ -16,10 +28,11 @@ const sendFile = (response, status, type, filePath) => {
 
 app.get('/', (req, res) => {
   res.sendFile(clientDir+'index.html')
-})
+});
 
-app.get('/', (req, res) => {
-  res.sendFile(clientDir+'index.html')
-})
+app.get('/indexlogin.html', (req, res) => {
+  res.sendFile(clientDir+'/indexlogin.html')
+});
 
-app.listen(port, () => console.log(`Example app listening on port port!`))
+app.listen(port, () => console.log(`Listening to port 3030!`));
+});
