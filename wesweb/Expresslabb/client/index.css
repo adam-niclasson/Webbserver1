@@ -1,31 +1,42 @@
-*{
-    margin-top: 0;
-    padding: 0;
+.img {
+    background-image: url(Waterfall.gif);
+    min-height: 100VH;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#main{
-    width: 800px;
-    background-color: darkgray;
-    text-align: center;
-}
-
-#box{
-    border: deeppink solid 2px;
-    width: 150px;
-    height: 100px;
-}
-
-#box1{
-    width: 150px;
-    height: 100px;
+#box1 {
+    width: 250px;
+    height: 150px;
     border: black solid 2px;
     background-color: ghostwhite;
     font-family: arial;
+    float: right;
 }
 
-#img{
-    width: 250px;
-    height: 300px;
-    background-color: ghostwhite;
+#innerbox{
+    padding-left: 10px;
+}
+
+#left {
+    border: black solid 2px;
+    background-color: darkgray;
+    float: left;
+    width: 300px;
+    height: auto;
+}
+
+#box {
+    width: 150px;
+    height: 50px;
+    float: left;
+    padding-left: 20px;
+}
+
+.list{
+    float: left;
+    width: 150px;
     
 }

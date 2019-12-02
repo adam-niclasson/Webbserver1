@@ -27,11 +27,11 @@ createServer((request, response) => {
 
 
 app.get('/', (req, res) => {
-  res.sendFile(clientDir+'index.html')
+  res.sendFile(clientDir+'index.html'+'index.css')
 });
 
 app.get('/indexlogin.html', (req, res) => {
-  res.sendFile(clientDir+'/indexlogin.html')
+  res.sendFile(clientDir+'/indexlogin.html'+'indexlogin.css')
 });
 
 app.listen(port, () => console.log(`Listening to port 3030!`));

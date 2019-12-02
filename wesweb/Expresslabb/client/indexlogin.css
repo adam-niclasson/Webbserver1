@@ -1,25 +1,27 @@
-*{
-    margin-top: 0;
-    padding: 0;
-}
-
 #main{
-    width: 1000px;
-    background-color: darkgray;
-
+    background-image: url(Waterfall.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    min-height: 100VH;
 }
 
 #left{
     width: 300px;
     height: auto;
     float: left;
+    border: black solid 2px;
+    background-color: darkgray;
+    
 }
 
 #center{
     width: 400px;
     height: auto;
     background-color: ghostwhite;
-    float: left;
+    margin: auto;
 }
 
 #right{
