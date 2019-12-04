@@ -38,5 +38,17 @@
 .list{
     float: left;
     width: 150px;
-    
+}
+
+#center{
+    width: 800px;
+    height: 1000px;
+    background-color: white;
+    opacity: 95%;
+    float: left;
+    margin-left: 290px;
+}
+
+#C{
+    padding-left: 10px;
 }
