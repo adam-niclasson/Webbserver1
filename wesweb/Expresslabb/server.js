@@ -2,6 +2,18 @@ const express = require('express');
 const app = express();
 const port = 3030;
 const clientDir = __dirname + '\\client\\';
+const bodyparser = require('body-parser');
+const Module = require('./myModule');
+
+app.use(bodyparser.urlencoded())
+app.use(express.json())
+
+app.post('/', (req, res) => {
+  let name = req.body.Username
+  let password = req.body.Password
+  Module.firstFunction(name, password)
+  res.sendFile(clientDir + 'indexlogin.html')
+})
 
 app.get('/', (req, res) => {
   res.sendFile(clientDir + 'index.html')
