@@ -4,9 +4,12 @@ const port = 3030;
 const clientDir = __dirname + '\\client\\';
 const bodyparser = require('body-parser');
 const Module = require('./myModule');
+const bcrypt = require('bcryptjs')
 
 app.use(bodyparser.urlencoded())
 app.use(express.json())
+
+const users = [];
 
 app.post('/', (req, res) => {
   let name = req.body.Username
@@ -15,10 +18,35 @@ app.post('/', (req, res) => {
   res.sendFile(clientDir + 'indexlogin.html')
 })
 
-app.post('', function (req, res) {
-  res.send(clientDir + 'register.html')
+app.get('/users', (req, res) => {
+  res.json(users)
+})
+app.post('/users', async (req, res) => {
+    try{
+      const hashedPassowrd = await bcrypt.hash(req.body.password, 10)
+      const user = { name: req.body.name, password: req.body.password }
+      users.push(user)
+      res.status(201).send()
+    } catch {
+      res.status(500).send()
+    }
 })
 
+app.post('/users/login', async (req, res) => {
+  const user = users.find(user => user.name === req.body.name)
+  if (user == null) {
+    return. res.status(400).send('Cannot find user')
+  }
+  try{
+    if(await bcrypt.compare(req.body.password)) {
+      res.send('Success')
+    } else {
+
+    }
+  } catch {
+    
+  }
+})
 app.get('/', (req, res) => {
   res.sendFile(clientDir + 'index.html')
 })
