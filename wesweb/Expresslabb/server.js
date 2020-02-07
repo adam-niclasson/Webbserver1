@@ -47,6 +47,9 @@ app.post('/users/login', async (req, res) => {
     
   }
 })
+app.post('/users/register', async (req, res) => {
+  
+})
 app.get('/', (req, res) => {
   res.sendFile(clientDir + 'index.html')
 })
@@ -55,6 +58,9 @@ app.get('/index.css', (req, res) => {
 })
 app.get('/Waterfall.gif', (req, res) => {
   res.sendFile(clientDir + 'Waterfall.gif')
+})
+app.get('/Gopnik.jpg', (req, res) => {
+  res.sendfile(clientDir + 'Gopnik.jpg')
 })
 app.get('/indexlogin.html', (req, res) => {
   res.sendFile(clientDir + 'indexlogin.html')

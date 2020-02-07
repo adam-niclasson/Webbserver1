@@ -1,0 +1,16 @@
+#main{
+    background-image: url(Waterfall.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    min-height: 100VH;
+}
+
+#center{
+    width: 400px;
+    height: auto;
+    background-color: ghostwhite;
+    margin: auto;
+}
