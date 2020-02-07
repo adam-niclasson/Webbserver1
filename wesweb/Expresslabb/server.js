@@ -66,5 +66,12 @@ app.get('/indexlogin.html', (req, res) => {
 app.get('/indexlogin.css', (req, res) => {
   res.sendFile(clientDir + 'indexlogin.css')
 })
+app.get('/indexreg.html', (req, res) => {
+  res.sendFile(clientdir + 'indexreg.html')
+})
+app.get('indexreg.css', (req, res) => {
+  res.sendfile(clientDir + 'indexreg.css')
+})
+
 app.listen(port, () => console.log(`Listening to port 3030!`)
 );
