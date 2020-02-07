@@ -47,9 +47,7 @@ app.post('/users/login', async (req, res) => {
     
   }
 })
-app.post('/users/register', async (req, res) => {
-  
-})
+
 app.get('/', (req, res) => {
   res.sendFile(clientDir + 'index.html')
 })
