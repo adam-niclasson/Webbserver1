@@ -4,7 +4,7 @@ const port = 3030;
 const clientDir = __dirname + '\\client\\';
 const bodyparser = require('body-parser');
 const Module = require('./myModule');
-const bcrypt = require('bcryptjs')
+const bcrypt = require('bcryptjs');
 
 app.use(bodyparser.urlencoded())
 app.use(express.json())
@@ -16,6 +16,11 @@ app.post('/', (req, res) => {
   let password = req.body.Password
   Module.firstFunction(name, password)
   res.sendFile(clientDir + 'indexlogin.html')
+})
+
+app.post('/reg', (req, res) => {
+  Module.regFunction(url)
+  res.sendFile(clientDir + 'indexreg.html')
 })
 
 app.get('/users', (req, res) => {
@@ -67,10 +72,10 @@ app.get('/indexlogin.css', (req, res) => {
   res.sendFile(clientDir + 'indexlogin.css')
 })
 app.get('/indexreg.html', (req, res) => {
-  res.sendFile(clientdir + 'indexreg.html')
+  res.sendFile(clientDir + 'indexreg.html')
 })
 app.get('indexreg.css', (req, res) => {
-  res.sendfile(clientDir + 'indexreg.css')
+  res.sendFile(clientDir + 'indexreg.css')
 })
 
 app.listen(port, () => console.log(`Listening to port 3030!`)

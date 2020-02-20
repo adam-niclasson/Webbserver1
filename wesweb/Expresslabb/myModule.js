@@ -26,3 +26,9 @@ exports.firstFunction = function (Username, Password)
         });
     });
 };
+
+exports.regFunction = function (url)
+{
+    console.log("note")
+    location.href("indexreg.html")
+};
