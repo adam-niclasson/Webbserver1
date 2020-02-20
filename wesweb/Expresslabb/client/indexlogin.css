@@ -1,36 +1,35 @@
-#main{
-    background-image: url(Waterfall.gif);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
-    min-height: 100VH;
+#main {
+  background-image: url(Waterfall.gif);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  min-height: 100vh;
 }
 
-#left{
-    width: 300px;
-    height: auto;
-    float: left;
-    border: black solid 2px;
-    background-color: darkgray;
-    
+#left {
+  width: 300px;
+  height: auto;
+  float: left;
+  border: black solid 2px;
+  background-color: darkgray;
 }
 
-#center{
-    width: 400px;
-    height: auto;
-    background-color: ghostwhite;
-    margin: auto;
+#center {
+  width: 400px;
+  height: auto;
+  background-color: ghostwhite;
+  margin: auto;
 }
 
-#right{
-    width: 300px;
-    height: auto;
-    float: right;
-    text-align: left;
+#right {
+  width: 300px;
+  height: auto;
+  float: right;
+  text-align: left;
 }
 
-#right ul{
-    background-color: ghostwhite;
+#right ul {
+  background-color: ghostwhite;
 }
