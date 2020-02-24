@@ -1,17 +1,26 @@
 #main {
-  background-image: url(Waterfall.gif);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: auto;
-  min-height: 100vh;
+    background-image: url(Waterfall.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    min-height: 100vh;
+    padding-top: 200px;
 }
 
 #center {
-  width: 400px;
-  height: auto;
-  background-color: ghostwhite;
-  margin: auto;
-  opacity: 95%;
+    width: 400px;
+    height: 400px;
+    background-color: ghostwhite;
+    margin: auto;
+    opacity: 95%;
+    padding: 10px;
+}
+
+#box1 {
+    width: 280px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 80px;
 }

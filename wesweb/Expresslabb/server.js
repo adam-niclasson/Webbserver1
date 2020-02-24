@@ -48,7 +48,7 @@ app.post("/users/login", async (req, res) => {
     } else {
       res.send("Not Allowed");
     }
-  } catch {}
+  } catch { }
 });
 
 app.get("/", (req, res) => {
@@ -72,7 +72,7 @@ app.get("/indexlogin.css", (req, res) => {
 app.get("/indexreg.html", (req, res) => {
   res.sendFile(clientDir + "indexreg.html");
 });
-app.get("indexreg.css", (req, res) => {
+app.get("/indexreg.css", (req, res) => {
   res.sendFile(clientDir + "indexreg.css");
 });
 
