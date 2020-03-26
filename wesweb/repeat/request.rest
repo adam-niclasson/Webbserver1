@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {
     "name": "Adam",
-    "passowrd": "password"
+    "password": "password"
 }
 
 ###
@@ -17,5 +17,5 @@ Content-Type: application/json
 
 {
     "name": "Adam",
-    "passowrd": "password"
+    "password": "password"
 }
