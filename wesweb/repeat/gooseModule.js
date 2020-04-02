@@ -1,27 +1,28 @@
 var mongoose = require("mongoose");
 mongoose.connect('mongodb://localhost/test', {useNewUrlParser: true});
+var Schema = mongoose.Schema;
 
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function() {
-    //open.
-});
+var userSchema = new Schema({
+    userName: String,
+    password: String
+})
 
-var kittySchema = new mongoose.Schema({
-    name: String
-});
+exports.registerUser = async function (name, pw) {
+    var UserModel = mongoose.model('User', userSchema)
 
-kittySchema.methods.speak = function () {
-    var greeting = this.name
-      ? "Meow name is " + this.name
-      : "I don't have a name";
-    console.log(greeting);
+    const user = new UserModel({ userName: name, password: pw})
+    
+    await user.save()
 }
-var Kitten = mongoose.model('Kitten', kittySchema);
 
-var silence = new Kitten({ name: 'Silence' });
-console.log(silence.name); // 'Silence'
+exports.findUser = async function(name) {
+    var UserModel = mongoose.model('User', userSchema)
 
-var fluffy = new Kitten({ name: 'fluffy' });
-fluffy.speak(); // "Meow name is fluffy"
+    return await UserModel.findOne({userName: name})
+}
 
+exports.getUsersList = async function () {
+    var UserModel = mongoose.model('User', userSchema)
+
+    return await UserModel.find();
+}

@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3030
 const clientDir = __dirname + '\\client\\'
-const Module = require("./myModule")
+const Module = require("./gooseModule")
 const bcrypt = require('bcryptjs')
 
 app.use(express.json())
@@ -57,5 +57,15 @@ app.post('/users/login', async (req, res) => {
         res.status(500).send()
     }
 })
+app.get('/users', async (req, res) => {
+    try {
+      let users = await UserModel.getUsersList()
+      console.log(users)
+      res.status(201).send(users)
+    } catch {
+      console.log("START MONGODB")
+      res.status(500).send()
+    }
+  })
 
 app.listen(port, () => console.log(`listening on port ${port}!`))
