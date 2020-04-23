@@ -4,6 +4,35 @@
     background-color: lightgrey;
 }
 
+#header{
+    width:1700px;
+    height:80px;
+}
+
+#login{
+    height: 70px;
+    width: 300px;
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 1px solid grey;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#logbar input{
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 27px;
+    font-size: 14px;
+    border: 1px solid grey;
+}
+
+
+
 #body {
     height: 700px;
     width: 1700px;
