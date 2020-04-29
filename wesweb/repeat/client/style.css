@@ -1,20 +1,20 @@
 #all {
     height: 900px;
-    width: 1700px;
+    width: 1900px;
     background-color: lightgrey;
 }
 
-#header{
-    width:1700px;
-    height:80px;
+#header {
+    width: 1900px;
+    height: 80px;
 }
 
-#login{
+#login {
     height: 70px;
     width: 300px;
     float: right;
     margin-right: 100px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     margin-top: 5px;
     border: 1px solid grey;
     border-radius: 50px;
@@ -22,7 +22,7 @@
     align-items: center;
 }
 
-#logbar input{
+#logbar input {
     padding-left: 4px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -35,6 +35,37 @@
 
 #body {
     height: 700px;
-    width: 1700px;
+    width: 1900px;
     background-color: grey;
+}
+
+#left {
+    float: left;
+    width: 633px;
+    height: 700px;
+    background-color: #fff;
+}
+
+img {
+    width: 45%;
+}
+
+#nav {
+    width: 280px;
+    background-color: grey;
+
+}
+
+#center {
+    float: left;
+    width: 633px;
+    height: 700px;
+    background-color: #fff;
+}
+
+#right {
+    float: right;
+    width: 634px;
+    height: 700px;
+    background-color: #fff;
 }

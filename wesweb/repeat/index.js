@@ -26,8 +26,8 @@ app.get('/style', (req, res) => {
 app.get('/indexlogin,html', (req, res) => {
     res.send(clientDir + 'indexlogin.html')
 })
-app.get('/Strongchanka', (req, res) => {
-    res.sendFile(clientDir + 'Strongchanka.png')
+app.get('/sida1.html', (req,res) => {
+    res.sendFile(clientDir + 'sida1.html')
 })
 app.get('/users', (req, res) => {
     res.json(users)
