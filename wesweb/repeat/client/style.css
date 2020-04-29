@@ -6,7 +6,7 @@
 
 #header {
     width: 1900px;
-    height: 80px;
+    height: 120px;
 }
 
 #login {
@@ -15,7 +15,7 @@
     float: right;
     margin-right: 100px;
     margin-bottom: 3px;
-    margin-top: 5px;
+    margin-top: 20px;
     border: 1px solid grey;
     border-radius: 50px;
     display: flex;
@@ -47,7 +47,7 @@
 }
 
 img {
-    width: 45%;
+    width: 65%;
 }
 
 #nav {
@@ -63,9 +63,42 @@ img {
     background-color: #fff;
 }
 
+p {
+    font-size: 18px;
+    width: 450px;
+}
+
 #right {
     float: right;
     width: 634px;
     height: 700px;
     background-color: #fff;
+}
+
+#footer {
+    width: 1900px;
+    height: 130px;
+    color: white;
+    background-color: #111;
+}
+
+#left1 {
+    padding-left: 100px;
+    height: 120px;
+    width: 300px;
+    float: left;
+}
+
+#right2 {
+    margin-right: 200px;
+    height: 120px;
+    float: right;
+    background-color: grey;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    margin-left: 5px;
 }
