@@ -6,7 +6,11 @@
 
 #header {
     width: 1900px;
-    height: 120px;
+    height: 100px;
+}
+
+#knivarse {
+    width: 27%
 }
 
 #login {
@@ -15,7 +19,7 @@
     float: right;
     margin-right: 100px;
     margin-bottom: 3px;
-    margin-top: 20px;
+    margin-top: 10px;
     border: 1px solid grey;
     border-radius: 50px;
     display: flex;
@@ -50,6 +54,11 @@ img {
     width: 65%;
 }
 
+#karta {
+    float: right;
+    width: 70%;
+}
+
 #nav {
     width: 280px;
     background-color: grey;
@@ -77,26 +86,49 @@ p {
 
 #footer {
     width: 1900px;
-    height: 130px;
+    height: 125px;
     color: white;
     background-color: #111;
 }
 
 #left1 {
-    padding-left: 100px;
+    margin-left: 400px;
     height: 120px;
-    width: 300px;
+    width: 340px;
     float: left;
+}
+
+#cent2 {
+    margin-left: px;
+    height: 120px;
+    width: 200px;
+    float: left;
+}
+
+#cont2 {
+    font-size: 16px;
+    width: 150px;
+    margin-left: 200px;
 }
 
 #right2 {
     margin-right: 200px;
     height: 120px;
+    width: 400px;
     float: right;
-    background-color: grey;
 }
 
-table,
+#slimboi {
+    width: 120px;
+    float: left;
+}
+
+table {
+    border: 1px solid black;
+    margin-left: 5px;
+    float: left;
+}
+
 th,
 td {
     border: 1px solid black;

@@ -29,6 +29,27 @@ app.get('/indexlogin,html', (req, res) => {
 app.get('/sida1.html', (req,res) => {
     res.sendFile(clientDir + 'sida1.html')
 })
+app.get('/sida1.css', (req, res) => {
+    res.sendFile(clientDir + 'sida1.css')
+})
+app.get('/sida2.html', (req,res) => {
+    res.sendFile(clientDir + 'sida2.html')
+})
+app.get('/sida2.css', (req, res) => {
+    res.sendFile(clientDir + 'sida2.css')
+})
+app.get('/sida3.html', (req,res) => {
+    res.sendFile(clientDir + 'sida3.html')
+})
+app.get('/sida3.css', (req, res) => {
+    res.sendFile(clientDir + 'sida3.css')
+})
+app.get('/sida4.html', (req,res) => {
+    res.sendFile(clientDir + 'sida4.html')
+})
+app.get('/sida4.css', (req, res) => {
+    res.sendFile(clientDir + 'sida4.css')
+})
 app.get('/users', (req, res) => {
     res.json(users)
 })
