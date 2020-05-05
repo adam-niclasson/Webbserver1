@@ -40,7 +40,7 @@
 #body {
     height: 700px;
     width: 1900px;
-    background-color: grey;
+    background-color: #111;
 }
 
 #left {
@@ -48,6 +48,10 @@
     width: 633px;
     height: 700px;
     background-color: #fff;
+}
+
+#knivar {
+    width: 55%;
 }
 
 img {
@@ -60,9 +64,21 @@ img {
 }
 
 #nav {
-    width: 280px;
-    background-color: grey;
+    width: 348px;
+    height: auto;
+    background-color: #111;
+}
 
+#nav a {
+    padding: 8px 0px 8px 70px;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#nav a:hover {
+    color: #f1f1f1;
 }
 
 #center {
@@ -109,6 +125,7 @@ p {
     font-size: 16px;
     width: 150px;
     margin-left: 200px;
+    color: #818181;
 }
 
 #right2 {
@@ -121,12 +138,14 @@ p {
 #slimboi {
     width: 120px;
     float: left;
+    color: #818181;
 }
 
 table {
     border: 1px solid black;
     margin-left: 5px;
     float: left;
+    color: #818181;
 }
 
 th,
