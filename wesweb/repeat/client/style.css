@@ -153,3 +153,148 @@ td {
     border: 1px solid black;
     margin-left: 5px;
 }
+
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+    #all {
+        height: 100%;
+        width: 100%;
+        background-color: lightgrey;
+    }
+
+    #header {
+        width: 100%;
+        height: 100%;
+    }
+
+    #knivarse {
+        width: 100%
+    }
+
+    #login {
+        height: 50px;
+        width: 150px;
+        float: right;
+        margin-right: 80px;
+        margin-bottom: 3px;
+        margin-top: 10px;
+        border: 1px solid grey;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    #logbar input {
+        padding-left: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        margin-left: 27px;
+        font-size: 12px;
+        border: 1px solid grey;
+    }
+
+    #body {
+        height: 100%;
+        width: 100%;
+        background-color: #111;
+    }
+
+    #left {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    #knivar {
+        width: 55%;
+    }
+
+    img {
+        width: 200%;
+    }
+
+    #karta {
+        float: right;
+        width: 70%;
+    }
+
+    #nav {
+        width: 348px;
+        height: auto;
+        background-color: #111;
+    }
+
+    #nav a {
+        padding: 8px 0px 8px 70px;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    #nav a:hover {
+        color: #f1f1f1;
+    }
+
+    #center {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    p {
+        font-size: 18px;
+        width: 450px;
+    }
+
+    #right {
+        width: 634px;
+        height: 700px;
+        background-color: #fff;
+    }
+
+    #footer {
+        width: 100%;
+        height: 100%;
+        color: white;
+        background-color: #111;
+    }
+
+    #left1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    #cent2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    #cont2 {
+        font-size: 16px;
+        width: 100%;
+        color: #818181;
+    }
+
+    #right2 {
+        margin-right: 100%;
+        height: 100%;
+        width: 100%;
+    }
+
+    #slimboi {
+        width: 100%;
+        color: #818181;
+    }
+
+    table {
+        border: 1px solid black;
+        margin-left: 5px;
+        color: #818181;
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        margin-left: 5px;
+    }
+}

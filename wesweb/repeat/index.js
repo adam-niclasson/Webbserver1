@@ -50,6 +50,36 @@ app.get('/sida4.html', (req,res) => {
 app.get('/sida4.css', (req, res) => {
     res.sendFile(clientDir + 'sida4.css')
 })
+app.get('/butiksbild.jpg', (req, res) => {
+    res.sendFile(clientDir + 'butiksbild.jpg')
+})
+app.get('/butterflyknife.jpg', (req, res) => {
+    res.sendFile(clientDir + 'butterflyknife.jpg')
+})
+app.get('/fiskekniv.jpg', (req, res) => {
+    res.sendFile(clientDir + 'fiskekniv.jpg')
+})
+app.get('/jaktkniv.jpg', (req, res) => {
+    res.sendFile(clientDir + 'jaktkniv.jpg')
+})
+app.get('/karambit.jpg', (req, res) => {
+    res.sendFile(clientDir + 'karambit.jpg')
+})
+app.get('/karta.png', (req, res) => {
+    res.sendFile(clientDir + 'karta.png')
+})
+app.get('/kastkniv.jpg', (req, res) => {
+    res.sendFile(clientDir + 'kastkniv.jpg')
+})
+app.get('/knivar.jpg', (req, res) => {
+    res.sendFile(clientDir + 'knivar.jpg')
+})
+app.get('/knivarse.png', (req, res) => {
+    res.sendFile(clientDir + 'knivarse.png')
+})
+app.get('/spring knife.jpg', (req, res) => {
+    res.sendFile(clientDir + 'spring knife.jpg')
+})
 app.get('/users', (req, res) => {
     res.json(users)
 })
