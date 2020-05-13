@@ -115,7 +115,7 @@ p {
 }
 
 #cent2 {
-    margin-left: px;
+    margin-left: 1px;
     height: 120px;
     width: 200px;
     float: left;
@@ -154,11 +154,14 @@ td {
     margin-left: 5px;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 400px) {
+@media screen and (min-width: 100px) and (max-width: 550px) {
+    *{
+        margin: 0px;
+    }
     #all {
         height: 100%;
         width: 100%;
-        background-color: lightgrey;
+        background-color: rgb(211, 211, 211);
     }
 
     #header {
@@ -172,9 +175,9 @@ td {
 
     #login {
         height: 50px;
-        width: 150px;
-        float: right;
-        margin-right: 80px;
+        width: 200px;
+        float: left;
+        margin-left: 20px;
         margin-bottom: 3px;
         margin-top: 10px;
         border: 1px solid grey;
@@ -188,37 +191,37 @@ td {
         padding-top: 4px;
         padding-bottom: 4px;
         margin-left: 27px;
-        font-size: 12px;
+        font-size: 8px;
         border: 1px solid grey;
     }
 
     #body {
-        height: 100%;
+        height: 1680px;
         width: 100%;
         background-color: #111;
     }
 
     #left {
         width: 100%;
-        height: 100%;
+        height: 700px;
         background-color: #fff;
     }
 
     #knivar {
-        width: 55%;
+        width: 75%;
     }
 
     img {
-        width: 200%;
+        width: 100%;
     }
 
     #karta {
+        width: 50%;
         float: right;
-        width: 70%;
     }
 
     #nav {
-        width: 348px;
+        width: 100%;
         height: auto;
         background-color: #111;
     }
@@ -237,7 +240,7 @@ td {
 
     #center {
         width: 100%;
-        height: 100%;
+        height: 400px;
         background-color: #fff;
     }
 
@@ -247,43 +250,56 @@ td {
     }
 
     #right {
-        width: 634px;
-        height: 700px;
+        width: 100%;
+        height: 600px;
         background-color: #fff;
     }
 
     #footer {
         width: 100%;
-        height: 100%;
+        height: 500px;
         color: white;
         background-color: #111;
     }
 
     #left1 {
-        height: 100%;
-        width: 100%;
+        float: left;
+        height: 200px;
+        width: 30%;
+        margin: 0px;
     }
 
     #cent2 {
-        height: 100%;
-        width: 100%;
+        float: left;
+        height: 160px;
+        width: 30%;
     }
 
     #cont2 {
+        float: left;
+        height: 200px;
         font-size: 16px;
-        width: 100%;
+        text-align: center;
+        width: 30%;
         color: #818181;
+        margin: 0px;
     }
 
     #right2 {
-        margin-right: 100%;
-        height: 100%;
-        width: 100%;
+        float: left;
+        height: 100px;
+        width: 250px;
+        margin: 0px;
+    }
+
+    #right2 p {
+        display: inline;
     }
 
     #slimboi {
-        width: 100%;
+        width: 50%;
         color: #818181;
+        float: left;
     }
 
     table {

@@ -1,1 +1,157 @@
-@media only screen and (min-width: 0px) and (max-width: 370px) {}
+#all {
+    height: 900px;
+    width: 1900px;
+    background-color: lightgrey;
+}
+
+#header {
+    width: 1900px;
+    height: 100px;
+}
+
+#knivarse {
+    width: 27%
+}
+
+#login {
+    height: 70px;
+    width: 300px;
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 3px;
+    margin-top: 10px;
+    border: 1px solid grey;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#logbar input {
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 27px;
+    font-size: 14px;
+    border: 1px solid grey;
+}
+
+
+
+#body {
+    height: 700px;
+    width: 1900px;
+    background-color: #111;
+}
+
+#left {
+    float: left;
+    width: 633px;
+    height: 700px;
+    background-color: #fff;
+}
+
+#knivar {
+    width: 55%;
+}
+
+img {
+    width: 65%;
+}
+
+#karta {
+    float: right;
+    width: 70%;
+}
+
+#nav {
+    width: 348px;
+    height: auto;
+    background-color: #111;
+}
+
+#nav a {
+    padding: 8px 0px 8px 70px;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#nav a:hover {
+    color: #f1f1f1;
+}
+
+#center {
+    float: left;
+    width: 633px;
+    height: 700px;
+    background-color: #fff;
+}
+
+p {
+    font-size: 18px;
+    width: 450px;
+}
+
+#right {
+    float: right;
+    width: 634px;
+    height: 700px;
+    background-color: #fff;
+}
+
+#footer {
+    width: 1900px;
+    height: 125px;
+    color: white;
+    background-color: #111;
+}
+
+#left1 {
+    margin-left: 400px;
+    height: 120px;
+    width: 340px;
+    float: left;
+}
+
+#cent2 {
+    margin-left: px;
+    height: 120px;
+    width: 200px;
+    float: left;
+}
+
+#cont2 {
+    font-size: 16px;
+    width: 150px;
+    margin-left: 200px;
+    color: #818181;
+}
+
+#right2 {
+    margin-right: 200px;
+    height: 120px;
+    width: 400px;
+    float: right;
+}
+
+#slimboi {
+    width: 120px;
+    float: left;
+    color: #818181;
+}
+
+table {
+    border: 1px solid black;
+    margin-left: 5px;
+    float: left;
+    color: #818181;
+}
+
+th,
+td {
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 550px) {}
