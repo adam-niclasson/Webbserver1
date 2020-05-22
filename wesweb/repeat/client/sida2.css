@@ -1,5 +1,5 @@
 #all {
-    height: 900px;
+    height: 800px;
     width: 1900px;
     background-color: lightgrey;
 }
@@ -51,6 +51,8 @@
 }
 
 #knivar {
+    margin-top: 45px;
+    margin-bottom: 45px;
     width: 55%;
 }
 
@@ -154,4 +156,10 @@ td {
     margin-left: 5px;
 }
 
-@media only screen and (min-width: 100px) and (max-width: 550px) {}
+@media only screen and (min-width: 100px) and (max-width: 550px) {
+    *{
+        margin: 0px;
+    }
+
+
+}

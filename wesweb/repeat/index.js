@@ -20,10 +20,10 @@ app.post("/", (req, res) => {
 app.get('/', (req, res) => 
     res.sendFile(clientDir + 'index.html')
 )
-app.get('/style', (req, res) => {
+app.get('/style.css', (req, res) => {
     res.sendFile(clientDir + 'style.css')
 })
-app.get('/indexlogin,html', (req, res) => {
+app.get('/indexlogin.html', (req, res) => {
     res.send(clientDir + 'indexlogin.html')
 })
 app.get('/sida1.html', (req,res) => {
@@ -59,8 +59,14 @@ app.get('/butterflyknife.jpg', (req, res) => {
 app.get('/fiskekniv.jpg', (req, res) => {
     res.sendFile(clientDir + 'fiskekniv.jpg')
 })
+app.get('/fiskekniv2.jpg', (req, res) => {
+    res.sendFile(clientDir + 'fiskekniv2.jpg')
+})
 app.get('/jaktkniv.jpg', (req, res) => {
     res.sendFile(clientDir + 'jaktkniv.jpg')
+})
+app.get('/jaktkniv2.jpg', (req, res) => {
+    res.sendFile(clientDir + 'jaktkniv2.jpg')
 })
 app.get('/karambit.jpg', (req, res) => {
     res.sendFile(clientDir + 'karambit.jpg')
@@ -71,6 +77,9 @@ app.get('/karta.png', (req, res) => {
 app.get('/kastkniv.jpg', (req, res) => {
     res.sendFile(clientDir + 'kastkniv.jpg')
 })
+app.get('/kastkniv2.jpg', (req, res) => {
+    res.sendFile(clientDir + 'kastkniv2.jpg')
+})
 app.get('/knivar.jpg', (req, res) => {
     res.sendFile(clientDir + 'knivar.jpg')
 })
@@ -79,6 +88,9 @@ app.get('/knivarse.png', (req, res) => {
 })
 app.get('/spring knife.jpg', (req, res) => {
     res.sendFile(clientDir + 'spring knife.jpg')
+})
+app.get('/Sharpening.mp4', (req, res) => {
+    res.sendFile(clientDir + 'Sharpening.mp4')
 })
 app.get('/users', (req, res) => {
     res.json(users)

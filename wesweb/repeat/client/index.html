@@ -5,7 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Knivar.se</title>
+    <script>
+        function myFunction() {
+          alert("Du är påväg att lämna denna sida. Är du säker?");
+        }
+        </script>
 </head>
 
 <body>
@@ -16,8 +21,9 @@
                 <div id=logbar>
                     <form action="/" method="POST">
                         <input type="text" name="Username" placeholder="Username" />
-                        <input type="password" name="Password" placeholder="Password" />
                         <input type="submit" value="Log in" />
+                        <input type="password" name="Password" placeholder="Password" />
+                        <button onclick="myFunction()">Register</button>
                     </form>
                 </div>
             </div>
@@ -35,13 +41,20 @@
             <div id=center>
                 <div id=text>
                     <h2>Knivar.se</h2>
-                    <p>Knivar.se grundades 2019 av Adam Niclasson. <br>Föreataget startade som en hobby på fritiden i garaget, där du kunde slipa dina knivar på beställning eller om du ville ha en unik kniv tillverkad.<br><br>Denna sida är framtagen utav våra knivfantaster som tog sig an att skapa en digital sida där man kna läsa om våra produkter, erfarenheter, rekomendationer och tjänster. <br>Vi kan erbjuda knivslipning, reparation av knivar och mer. <br></p>
+                    <p>Knivar.se grundades 2019 av Adam Niclasson. <br>Föreataget startade som en hobby på fritiden i garaget, där du kunde slipa dina knivar på beställning eller om du ville ha en unik kniv tillverkad.
+                    <br><br>Denna sida är framtagen utav våra knivfantaster som tog sig an att skapa en digital sida där man kna läsa om våra produkter, erfarenheter, rekomendationer och tjänster.
+                    <br>Vi kan erbjuda knivslipning, reparation av knivar och mer.
+                    <br><br>Här är en video på hur du slipar din kniv bra.</p>
+                    <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/qtCx7_hM8sc?start=109"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media;
+                    gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div id=right>
                 <img src="butiksbild.jpg" alt="">
                 <p>I vår butik kan du hitta fler val av knivar, utrustning och böcker. Vi kan äve nerbjuda tjänster som knivslipning, rekomendationer. <br> Du kan även kolla på knivar som finns på display i butiken.
-                    <br><br>Vi som jobbar på knivar.se vill framföra information om knivar som kan passa dig och det arbete som du håller på med. <br><br> Vårt sortiment är brett med många sortes knivar, tipps, tillbehör och instruktioner. <br> </p>
+                <br><br>Vi som jobbar på knivar.se vill framföra information om knivar som kan passa dig och det arbete som du håller på med. <br><br> Vårt sortiment är brett med många sortes knivar, tipps, tillbehör och instruktioner. <br> </p>
             </div>
         </div>
         <div id=footer>

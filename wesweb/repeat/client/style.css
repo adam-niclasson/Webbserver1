@@ -26,7 +26,7 @@
     align-items: center;
 }
 
-#logbar input {
+#logbar input, button {
     padding-left: 4px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -110,7 +110,7 @@ p {
 #left1 {
     margin-left: 400px;
     height: 120px;
-    width: 340px;
+    width: 220px;
     float: left;
 }
 
@@ -124,7 +124,8 @@ p {
 #cont2 {
     font-size: 16px;
     width: 150px;
-    margin-left: 200px;
+    margin-left: 100px;
+    float: left;
     color: #818181;
 }
 
@@ -170,7 +171,7 @@ td {
     }
 
     #knivarse {
-        width: 100%
+        width: 80%
     }
 
     #login {
@@ -212,7 +213,7 @@ td {
     }
 
     img {
-        width: 100%;
+        width: 80%;
     }
 
     #karta {
@@ -257,39 +258,39 @@ td {
 
     #footer {
         width: 100%;
-        height: 500px;
+        height: 324px;
         color: white;
         background-color: #111;
     }
 
     #left1 {
         float: left;
-        height: 200px;
-        width: 30%;
+        height: 124px;
+        width: 178px;
         margin: 0px;
     }
 
     #cent2 {
         float: left;
-        height: 160px;
-        width: 30%;
+        height: 124px;
+        width: 178px;
     }
 
     #cont2 {
         float: left;
-        height: 200px;
+        height: 124px;
         font-size: 16px;
         text-align: center;
-        width: 30%;
+        width: 80px;
         color: #818181;
-        margin: 0px;
+        margin-left: 0px;
     }
 
     #right2 {
         float: left;
         height: 100px;
         width: 250px;
-        margin: 0px;
+        margin-top: 10px;
     }
 
     #right2 p {
