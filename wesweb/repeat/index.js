@@ -13,7 +13,7 @@ const users = []
 app.post("/", (req, res) => {
     let name = req.body.Username;
     let password = req.body.Password;
-    Module.firstFunction(name, password);
+    Module.registerUser(name, password);
     res.sendFile(clientDir + "indexlogin.html");
 });
 
@@ -23,28 +23,28 @@ app.get('/', (req, res) =>
 app.get('/style.css', (req, res) => {
     res.sendFile(clientDir + 'style.css')
 })
-app.get('/indexlogin.html', (req, res) => {
+app.get('/log in', (req, res) => {
     res.send(clientDir + 'indexlogin.html')
 })
-app.get('/sida1.html', (req,res) => {
+app.get('/Jaktknivar', (req,res) => {
     res.sendFile(clientDir + 'sida1.html')
 })
 app.get('/sida1.css', (req, res) => {
     res.sendFile(clientDir + 'sida1.css')
 })
-app.get('/sida2.html', (req,res) => {
+app.get('/Fiskeknivar', (req,res) => {
     res.sendFile(clientDir + 'sida2.html')
 })
 app.get('/sida2.css', (req, res) => {
     res.sendFile(clientDir + 'sida2.css')
 })
-app.get('/sida3.html', (req,res) => {
+app.get('/Kastknivar', (req,res) => {
     res.sendFile(clientDir + 'sida3.html')
 })
 app.get('/sida3.css', (req, res) => {
     res.sendFile(clientDir + 'sida3.css')
 })
-app.get('/sida4.html', (req,res) => {
+app.get('/AndraKnivar', (req,res) => {
     res.sendFile(clientDir + 'sida4.html')
 })
 app.get('/sida4.css', (req, res) => {
@@ -86,8 +86,8 @@ app.get('/knivar.jpg', (req, res) => {
 app.get('/knivarse.png', (req, res) => {
     res.sendFile(clientDir + 'knivarse.png')
 })
-app.get('/spring knife.jpg', (req, res) => {
-    res.sendFile(clientDir + 'spring knife.jpg')
+app.get('/springknife.jpg', (req, res) => {
+    res.sendFile(clientDir + 'springknife.jpg')
 })
 app.get('/Sharpening.mp4', (req, res) => {
     res.sendFile(clientDir + 'Sharpening.mp4')

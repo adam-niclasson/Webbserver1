@@ -26,7 +26,8 @@
     align-items: center;
 }
 
-#logbar input, button {
+#logbar input,
+button {
     padding-left: 4px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -34,8 +35,6 @@
     font-size: 14px;
     border: 1px solid grey;
 }
-
-
 
 #body {
     height: 700px;
@@ -156,9 +155,10 @@ td {
 }
 
 @media screen and (min-width: 100px) and (max-width: 550px) {
-    *{
+    * {
         margin: 0px;
     }
+
     #all {
         height: 100%;
         width: 100%;
