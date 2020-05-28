@@ -26,6 +26,10 @@
     align-items: center;
 }
 
+button {
+    float: right;
+}
+
 #logbar input,
 button {
     padding-left: 4px;

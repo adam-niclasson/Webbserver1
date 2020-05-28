@@ -50,43 +50,41 @@ app.get('/AndraKnivar', (req,res) => {
 app.get('/sida4.css', (req, res) => {
     res.sendFile(clientDir + 'sida4.css')
 })
-app.get('/butiksbild.jpg', (req, res) => {
+
+app.get('/butik', (req, res) => {
     res.sendFile(clientDir + 'butiksbild.jpg')
 })
-app.get('/butterflyknife.jpg', (req, res) => {
-    res.sendFile(clientDir + 'butterflyknife.jpg')
-})
-app.get('/fiskekniv.jpg', (req, res) => {
+app.get('/fiskekniv', (req, res) => {
     res.sendFile(clientDir + 'fiskekniv.jpg')
 })
-app.get('/fiskekniv2.jpg', (req, res) => {
+app.get('/kökskniv', (req, res) => {
     res.sendFile(clientDir + 'fiskekniv2.jpg')
 })
-app.get('/jaktkniv.jpg', (req, res) => {
+app.get('/Buck', (req, res) => {
     res.sendFile(clientDir + 'jaktkniv.jpg')
 })
-app.get('/jaktkniv2.jpg', (req, res) => {
+app.get('/jaktdamaskus', (req, res) => {
     res.sendFile(clientDir + 'jaktkniv2.jpg')
 })
-app.get('/karambit.jpg', (req, res) => {
+app.get('/karambit', (req, res) => {
     res.sendFile(clientDir + 'karambit.jpg')
 })
-app.get('/karta.png', (req, res) => {
+app.get('/karta', (req, res) => {
     res.sendFile(clientDir + 'karta.png')
 })
-app.get('/kastkniv.jpg', (req, res) => {
+app.get('/kastkunai', (req, res) => {
     res.sendFile(clientDir + 'kastkniv.jpg')
 })
-app.get('/kastkniv2.jpg', (req, res) => {
+app.get('/kastkniv', (req, res) => {
     res.sendFile(clientDir + 'kastkniv2.jpg')
 })
 app.get('/knivar.jpg', (req, res) => {
     res.sendFile(clientDir + 'knivar.jpg')
 })
-app.get('/knivarse.png', (req, res) => {
+app.get('/logga', (req, res) => {
     res.sendFile(clientDir + 'knivarse.png')
 })
-app.get('/springknife.jpg', (req, res) => {
+app.get('/joker', (req, res) => {
     res.sendFile(clientDir + 'springknife.jpg')
 })
 app.get('/Sharpening.mp4', (req, res) => {
